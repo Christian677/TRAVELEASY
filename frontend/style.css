@@ -47,8 +47,8 @@ body{
 
 
 div{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 a{
@@ -106,7 +106,7 @@ input:hover{
 
 #send{
     position: absolute;
-    margin-top: 18%;
+    margin-top: 12.5%;
     margin-left: 5%;
     font-size: 18px;
 }
@@ -116,5 +116,10 @@ input:hover{
     color: red;
     transition: .8s ease-in-out;
 }
+
+.cazzoinculo{
+    margin-bottom: 5vh;
+}
+
 
 
