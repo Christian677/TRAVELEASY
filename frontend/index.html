@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="navbar.js"></script>
     <style>
@@ -20,6 +21,7 @@
            <button class="bottone2">Carrello</button>
            <button class="bottone3">Prenotazioni</button>
        </ul>
+       
       </div>
   </nav>
 
@@ -33,6 +35,14 @@
 
 </body>
 </html>
+
+<script>
+$(document).ready(function(){
+    $(".pic").fadeIn();
+
+  });
+</script>
+
 
 <style>
 * {
@@ -52,7 +62,7 @@ ul {
 }
 
 li, button{
- margin: 10px 20px;
+ margin: 10px 10px;
  position: relative;
  left: 1100px;
  
@@ -66,105 +76,103 @@ img {
 }
 
 
+
+/* CSS */
 .bottone1 {
-  background-color: #0078d0;
-  border: 0;
-  border-radius: 56px;
-  color: #fff;
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
   cursor: pointer;
-  display: inline-block;
-  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  outline: 0;
-  padding: 2px 12px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.bottone1:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(47, 0, 255, 0.5), .125rem .125rem 1rem rgba(0, 8, 255, 0.5);
+}
+
+.bottone1:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 74, 239, 0.5), .125rem .125rem 1rem rgba(51, 0, 255, 0.5);
 }
 
 
-.bottone1:hover {
-  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
-  transform: scale(1.05);
-}
 
-@media (min-width: 768px) {
-  .bottonne {
-    padding: 16px 48px;
-  }
-}
 
 .bottone2 {
-    background-color: #0078d0;
-    border: 0;
-    border-radius: 56px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    outline: 0;
-    padding: 2px 12px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: all .3s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
+    background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
 
-  .bottone2:hover {
-    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
-    transform: scale(1.05);
-  }
+.bottone2:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(47, 0, 255, 0.5), .125rem .125rem 1rem rgba(0, 8, 255, 0.5);
+}
 
+.bottone2:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 74, 239, 0.5), .125rem .125rem 1rem rgba(51, 0, 255, 0.5);
+}
   
-@media (min-width: 768px) {
-    .bottonne2 {
-      padding: 16px 48px;
-    }
-  }
-
   .bottone3 {
-    background-color: #0078d0;
-    border: 0;
-    border-radius: 56px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    outline: 0;
-    padding: 2px 12px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: all .3s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
+    background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
 
-  .bottone3:hover {
-    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
-    transform: scale(1.05);
-  }
+.bottone3:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(47, 0, 255, 0.5), .125rem .125rem 1rem rgba(0, 8, 255, 0.5);
+}
+
+.bottone3:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 74, 239, 0.5), .125rem .125rem 1rem rgba(51, 0, 255, 0.5);
+}
+  
 
   
-@media (min-width: 768px) {
-    .bottonne3 {
-      padding: 16px 48px;
-    }
-  }
-
   .pic {
     background: rgb(20,64,217);
     background: radial-gradient(circle, rgba(20,64,217,1) 1%, rgba(9,121,112,0.4433123591233369) 54%, rgba(0,121,255,1) 93%);
@@ -190,4 +198,8 @@ img {
       position: relative;
       top: 0px;
   } 
+
+
+
+
 </style>
