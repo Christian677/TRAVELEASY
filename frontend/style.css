@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --purple: #9B5DE5;
+    --pink: #F15BB5;
+    --yellow: #FEE440;
+    --cyan: #00BBF9;
+    --marine-cyan: #00F5D4;
+}
+
+h2, p, label{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2{
+    font-size: 32px;
+    transition: all .3s ease-out;
+    box-shadow:  0 -1px 0 0 white inset, 0 -3px 0 0 inset ;
+}
+
+
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,2,99,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-image: radial-gradient(circle at 87.5% 12.5%, #ffffff 0, #ffffff 8.33%, #ffffff 16.67%, #ffffff 25%, #ffffff 33.33%, #fefefe 41.67%, #f4f9f6 50%, #eaf4ef 58.33%, #e0f0ea 66.67%, #d6ece6 75%, #cde8e4 83.33%, #c4e5e2 91.67%, #bde2e2 100%);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 5px solid black;
+    margin-top: 7%;
+    border-radius: 25px;
+    animation-name: shadowing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+div{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+@keyframes shadowing{
+    0%{
+        box-shadow: 2px 2px 15px 20px black;
+
+    }
+
+    30%{
+        box-shadow : 5px 2px 15px 20px #0000
+    }
+
+    60%{
+        box-shadow: 5px 10px 15px 20px black;
+    }
+
+    80%{
+        box-shadow: 5px 2px 15px 20px #0000
+
+
+    }
+
+    100%{
+        box-shadow: 2px 2px 15px 20px black;
+    }
+}
+
+label{
+    margin-left: 5rem;
+    margin-right: 1rem;
+    font-size: 18px;
+}
+
+input{
+    margin-right: 5rem;
+    padding: 5px;
+}
+
+input{
+    border-radius: 5px;
+}
+input:hover{
+    border: 2px solid red;
+    color: red;
+    transition: .8s ease-in-out;
+    cursor: pointer;
+
+    
+    
+}
+
+#send{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+#send:hover{
+    border: 2px solid red;
+    color: red;
+    transition: .8s ease-in-out;
+}
+
+
